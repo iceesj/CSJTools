@@ -21,12 +21,12 @@
 		B026419118A3FB4900012D04 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B026417318A3FB4900012D04 /* UIKit.framework */; };
 		B026419918A3FB4900012D04 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B026419718A3FB4900012D04 /* InfoPlist.strings */; };
 		B026419B18A3FB4900012D04 /* CSJToolsDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B026419A18A3FB4900012D04 /* CSJToolsDemoTests.m */; };
-		B02641B918A3FB6200012D04 /* CSJDate.m in Sources */ = {isa = PBXBuildFile; fileRef = B02641A818A3FB6100012D04 /* CSJDate.m */; };
-		B02641BA18A3FB6200012D04 /* CSJBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = B02641AF18A3FB6200012D04 /* CSJBase64.m */; };
-		B02641BB18A3FB6200012D04 /* CSJDES.m in Sources */ = {isa = PBXBuildFile; fileRef = B02641B118A3FB6200012D04 /* CSJDES.m */; };
-		B02641BC18A3FB6200012D04 /* CSJMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = B02641B318A3FB6200012D04 /* CSJMD5.m */; };
-		B02641BD18A3FB6200012D04 /* CSJString.m in Sources */ = {isa = PBXBuildFile; fileRef = B02641B518A3FB6200012D04 /* CSJString.m */; };
-		B02641BE18A3FB6200012D04 /* CSJURL.m in Sources */ = {isa = PBXBuildFile; fileRef = B02641B818A3FB6200012D04 /* CSJURL.m */; };
+		B070135318A514A300FACF7D /* CSJBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = B070134618A514A300FACF7D /* CSJBase64.m */; };
+		B070135418A514A300FACF7D /* CSJDate.m in Sources */ = {isa = PBXBuildFile; fileRef = B070134818A514A300FACF7D /* CSJDate.m */; };
+		B070135518A514A300FACF7D /* CSJDES.m in Sources */ = {isa = PBXBuildFile; fileRef = B070134A18A514A300FACF7D /* CSJDES.m */; };
+		B070135618A514A300FACF7D /* CSJMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = B070134E18A514A300FACF7D /* CSJMD5.m */; };
+		B070135718A514A300FACF7D /* CSJString.m in Sources */ = {isa = PBXBuildFile; fileRef = B070135018A514A300FACF7D /* CSJString.m */; };
+		B070135818A514A300FACF7D /* CSJURL.m in Sources */ = {isa = PBXBuildFile; fileRef = B070135218A514A300FACF7D /* CSJURL.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,20 +59,20 @@
 		B026419618A3FB4900012D04 /* CSJToolsDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CSJToolsDemoTests-Info.plist"; sourceTree = "<group>"; };
 		B026419818A3FB4900012D04 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B026419A18A3FB4900012D04 /* CSJToolsDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSJToolsDemoTests.m; sourceTree = "<group>"; };
-		B02641A718A3FB6100012D04 /* CSJDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSJDate.h; sourceTree = "<group>"; };
-		B02641A818A3FB6100012D04 /* CSJDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSJDate.m; sourceTree = "<group>"; };
-		B02641AA18A3FB6100012D04 /* CSJLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSJLog.h; sourceTree = "<group>"; };
-		B02641AC18A3FB6200012D04 /* CSJMaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSJMaster.h; sourceTree = "<group>"; };
-		B02641AE18A3FB6200012D04 /* CSJBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSJBase64.h; sourceTree = "<group>"; };
-		B02641AF18A3FB6200012D04 /* CSJBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSJBase64.m; sourceTree = "<group>"; };
-		B02641B018A3FB6200012D04 /* CSJDES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSJDES.h; sourceTree = "<group>"; };
-		B02641B118A3FB6200012D04 /* CSJDES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSJDES.m; sourceTree = "<group>"; };
-		B02641B218A3FB6200012D04 /* CSJMD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSJMD5.h; sourceTree = "<group>"; };
-		B02641B318A3FB6200012D04 /* CSJMD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSJMD5.m; sourceTree = "<group>"; };
-		B02641B418A3FB6200012D04 /* CSJString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSJString.h; sourceTree = "<group>"; };
-		B02641B518A3FB6200012D04 /* CSJString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSJString.m; sourceTree = "<group>"; };
-		B02641B718A3FB6200012D04 /* CSJURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSJURL.h; sourceTree = "<group>"; };
-		B02641B818A3FB6200012D04 /* CSJURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSJURL.m; sourceTree = "<group>"; };
+		B070134518A514A300FACF7D /* CSJBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSJBase64.h; sourceTree = "<group>"; };
+		B070134618A514A300FACF7D /* CSJBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSJBase64.m; sourceTree = "<group>"; };
+		B070134718A514A300FACF7D /* CSJDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSJDate.h; sourceTree = "<group>"; };
+		B070134818A514A300FACF7D /* CSJDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSJDate.m; sourceTree = "<group>"; };
+		B070134918A514A300FACF7D /* CSJDES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSJDES.h; sourceTree = "<group>"; };
+		B070134A18A514A300FACF7D /* CSJDES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSJDES.m; sourceTree = "<group>"; };
+		B070134B18A514A300FACF7D /* CSJLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSJLog.h; sourceTree = "<group>"; };
+		B070134C18A514A300FACF7D /* CSJMaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSJMaster.h; sourceTree = "<group>"; };
+		B070134D18A514A300FACF7D /* CSJMD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSJMD5.h; sourceTree = "<group>"; };
+		B070134E18A514A300FACF7D /* CSJMD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSJMD5.m; sourceTree = "<group>"; };
+		B070134F18A514A300FACF7D /* CSJString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSJString.h; sourceTree = "<group>"; };
+		B070135018A514A300FACF7D /* CSJString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSJString.m; sourceTree = "<group>"; };
+		B070135118A514A300FACF7D /* CSJURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSJURL.h; sourceTree = "<group>"; };
+		B070135218A514A300FACF7D /* CSJURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSJURL.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,70 +176,22 @@
 		B02641A418A3FB6100012D04 /* CSJTools */ = {
 			isa = PBXGroup;
 			children = (
-				B02641A518A3FB6100012D04 /* CSJApplication */,
-				B02641A618A3FB6100012D04 /* CSJDate */,
-				B02641A918A3FB6100012D04 /* CSJLog */,
-				B02641AB18A3FB6100012D04 /* CSJMaster */,
-				B02641AD18A3FB6200012D04 /* CSJString */,
-				B02641B618A3FB6200012D04 /* CSJURL */,
+				B070134C18A514A300FACF7D /* CSJMaster.h */,
+				B070134B18A514A300FACF7D /* CSJLog.h */,
+				B070134518A514A300FACF7D /* CSJBase64.h */,
+				B070134618A514A300FACF7D /* CSJBase64.m */,
+				B070134718A514A300FACF7D /* CSJDate.h */,
+				B070134818A514A300FACF7D /* CSJDate.m */,
+				B070134918A514A300FACF7D /* CSJDES.h */,
+				B070134A18A514A300FACF7D /* CSJDES.m */,
+				B070134D18A514A300FACF7D /* CSJMD5.h */,
+				B070134E18A514A300FACF7D /* CSJMD5.m */,
+				B070134F18A514A300FACF7D /* CSJString.h */,
+				B070135018A514A300FACF7D /* CSJString.m */,
+				B070135118A514A300FACF7D /* CSJURL.h */,
+				B070135218A514A300FACF7D /* CSJURL.m */,
 			);
 			path = CSJTools;
-			sourceTree = "<group>";
-		};
-		B02641A518A3FB6100012D04 /* CSJApplication */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CSJApplication;
-			sourceTree = "<group>";
-		};
-		B02641A618A3FB6100012D04 /* CSJDate */ = {
-			isa = PBXGroup;
-			children = (
-				B02641A718A3FB6100012D04 /* CSJDate.h */,
-				B02641A818A3FB6100012D04 /* CSJDate.m */,
-			);
-			path = CSJDate;
-			sourceTree = "<group>";
-		};
-		B02641A918A3FB6100012D04 /* CSJLog */ = {
-			isa = PBXGroup;
-			children = (
-				B02641AA18A3FB6100012D04 /* CSJLog.h */,
-			);
-			path = CSJLog;
-			sourceTree = "<group>";
-		};
-		B02641AB18A3FB6100012D04 /* CSJMaster */ = {
-			isa = PBXGroup;
-			children = (
-				B02641AC18A3FB6200012D04 /* CSJMaster.h */,
-			);
-			path = CSJMaster;
-			sourceTree = "<group>";
-		};
-		B02641AD18A3FB6200012D04 /* CSJString */ = {
-			isa = PBXGroup;
-			children = (
-				B02641AE18A3FB6200012D04 /* CSJBase64.h */,
-				B02641AF18A3FB6200012D04 /* CSJBase64.m */,
-				B02641B018A3FB6200012D04 /* CSJDES.h */,
-				B02641B118A3FB6200012D04 /* CSJDES.m */,
-				B02641B218A3FB6200012D04 /* CSJMD5.h */,
-				B02641B318A3FB6200012D04 /* CSJMD5.m */,
-				B02641B418A3FB6200012D04 /* CSJString.h */,
-				B02641B518A3FB6200012D04 /* CSJString.m */,
-			);
-			path = CSJString;
-			sourceTree = "<group>";
-		};
-		B02641B618A3FB6200012D04 /* CSJURL */ = {
-			isa = PBXGroup;
-			children = (
-				B02641B718A3FB6200012D04 /* CSJURL.h */,
-				B02641B818A3FB6200012D04 /* CSJURL.m */,
-			);
-			path = CSJURL;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,14 +292,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B026418618A3FB4900012D04 /* ViewController.m in Sources */,
+				B070135418A514A300FACF7D /* CSJDate.m in Sources */,
 				B026418018A3FB4900012D04 /* AppDelegate.m in Sources */,
-				B02641BA18A3FB6200012D04 /* CSJBase64.m in Sources */,
-				B02641BC18A3FB6200012D04 /* CSJMD5.m in Sources */,
-				B02641BB18A3FB6200012D04 /* CSJDES.m in Sources */,
-				B02641BE18A3FB6200012D04 /* CSJURL.m in Sources */,
-				B02641BD18A3FB6200012D04 /* CSJString.m in Sources */,
-				B02641B918A3FB6200012D04 /* CSJDate.m in Sources */,
+				B070135618A514A300FACF7D /* CSJMD5.m in Sources */,
+				B070135518A514A300FACF7D /* CSJDES.m in Sources */,
+				B070135818A514A300FACF7D /* CSJURL.m in Sources */,
+				B070135718A514A300FACF7D /* CSJString.m in Sources */,
 				B026417C18A3FB4900012D04 /* main.m in Sources */,
+				B070135318A514A300FACF7D /* CSJBase64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,6 +508,7 @@
 				B02641A018A3FB4900012D04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B02641A118A3FB4900012D04 /* Build configuration list for PBXNativeTarget "CSJToolsDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -564,6 +517,7 @@
 				B02641A318A3FB4900012D04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

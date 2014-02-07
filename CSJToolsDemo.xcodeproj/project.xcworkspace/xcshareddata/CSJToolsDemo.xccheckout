@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E71F1607-F85F-4B5A-AACA-B56B48CBE768</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CSJToolsDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>194BED98-F545-4DDE-B3C3-706C403884ED</key>
+		<string>https://github.com/iceesj/CSJTools.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CSJToolsDemo.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>194BED98-F545-4DDE-B3C3-706C403884ED</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/iceesj/CSJTools.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>194BED98-F545-4DDE-B3C3-706C403884ED</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>194BED98-F545-4DDE-B3C3-706C403884ED</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CSJTools</string>
+		</dict>
+	</array>
+</dict>
+</plist>
