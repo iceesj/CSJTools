@@ -8,10 +8,20 @@ CSJTools is an Objective-C library for iOS developers.
 ####0.0.5
 * first version
 
+####0.0.6
+* add custom UINavigationController
+* add use coredata FetchedResults tableviewcontroller
 
 ##Requirements
 * iOS 6.0 or later
 * must support ARC
+
+##Installation with CocoaPods
+#####Podfile
+```
+platform :ios, '6.0'
+pod 'CSJTools'
+```
 
 ##List
 #####CSJMaster.h

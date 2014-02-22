@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B00D74DB18B8F0C500BA3BD9 /* CSJ_CoredataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B00D74DA18B8F0C500BA3BD9 /* CSJ_CoredataTableViewController.m */; };
 		B00D74DE18B8F3CD00BA3BD9 /* CSJ_NavGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B00D74DD18B8F3CD00BA3BD9 /* CSJ_NavGestureViewController.m */; };
+		B00D74E118B9072A00BA3BD9 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B00D74E018B9072A00BA3BD9 /* SecondViewController.m */; };
 		B026417018A3FB4900012D04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B026416F18A3FB4900012D04 /* Foundation.framework */; };
 		B026417218A3FB4900012D04 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B026417118A3FB4900012D04 /* CoreGraphics.framework */; };
 		B026417418A3FB4900012D04 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B026417318A3FB4900012D04 /* UIKit.framework */; };
@@ -46,6 +47,8 @@
 		B00D74DA18B8F0C500BA3BD9 /* CSJ_CoredataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSJ_CoredataTableViewController.m; sourceTree = "<group>"; };
 		B00D74DC18B8F3CD00BA3BD9 /* CSJ_NavGestureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSJ_NavGestureViewController.h; sourceTree = "<group>"; };
 		B00D74DD18B8F3CD00BA3BD9 /* CSJ_NavGestureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSJ_NavGestureViewController.m; sourceTree = "<group>"; };
+		B00D74DF18B9072A00BA3BD9 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		B00D74E018B9072A00BA3BD9 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		B026416C18A3FB4900012D04 /* CSJToolsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSJToolsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B026416F18A3FB4900012D04 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B026417118A3FB4900012D04 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -144,6 +147,8 @@
 				B026418118A3FB4900012D04 /* Main.storyboard */,
 				B026418418A3FB4900012D04 /* ViewController.h */,
 				B026418518A3FB4900012D04 /* ViewController.m */,
+				B00D74DF18B9072A00BA3BD9 /* SecondViewController.h */,
+				B00D74E018B9072A00BA3BD9 /* SecondViewController.m */,
 				B026418718A3FB4900012D04 /* Images.xcassets */,
 				B026417618A3FB4900012D04 /* Supporting Files */,
 			);
@@ -301,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B00D74E118B9072A00BA3BD9 /* SecondViewController.m in Sources */,
 				B026418618A3FB4900012D04 /* ViewController.m in Sources */,
 				B070135418A514A300FACF7D /* CSJDate.m in Sources */,
 				B026418018A3FB4900012D04 /* AppDelegate.m in Sources */,

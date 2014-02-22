@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SecondViewController.h"
 
 @interface ViewController ()
 
@@ -21,6 +22,13 @@
     NSString *base64ST = [st base64String];
     NSLog(@"base64ST == %@",base64ST);
     
+}
+- (IBAction)buttonpressed:(id)sender {
+    [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"SecondViewController"] animated:YES];
+    //你懂的
+    if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]){
+        self.navigationController.interactivePopGestureRecognizer.enabled = NO;
+    }
 }
 
 - (void)didReceiveMemoryWarning
