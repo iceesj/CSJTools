@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B00D74DB18B8F0C500BA3BD9 /* CSJ_CoredataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B00D74DA18B8F0C500BA3BD9 /* CSJ_CoredataTableViewController.m */; };
+		B00D74DE18B8F3CD00BA3BD9 /* CSJ_NavGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B00D74DD18B8F3CD00BA3BD9 /* CSJ_NavGestureViewController.m */; };
 		B026417018A3FB4900012D04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B026416F18A3FB4900012D04 /* Foundation.framework */; };
 		B026417218A3FB4900012D04 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B026417118A3FB4900012D04 /* CoreGraphics.framework */; };
 		B026417418A3FB4900012D04 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B026417318A3FB4900012D04 /* UIKit.framework */; };
@@ -40,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B00D74D918B8F0C500BA3BD9 /* CSJ_CoredataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSJ_CoredataTableViewController.h; sourceTree = "<group>"; };
+		B00D74DA18B8F0C500BA3BD9 /* CSJ_CoredataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSJ_CoredataTableViewController.m; sourceTree = "<group>"; };
+		B00D74DC18B8F3CD00BA3BD9 /* CSJ_NavGestureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSJ_NavGestureViewController.h; sourceTree = "<group>"; };
+		B00D74DD18B8F3CD00BA3BD9 /* CSJ_NavGestureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSJ_NavGestureViewController.m; sourceTree = "<group>"; };
 		B026416C18A3FB4900012D04 /* CSJToolsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSJToolsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B026416F18A3FB4900012D04 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B026417118A3FB4900012D04 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -190,6 +196,10 @@
 				B070135018A514A300FACF7D /* CSJString.m */,
 				B070135118A514A300FACF7D /* CSJURL.h */,
 				B070135218A514A300FACF7D /* CSJURL.m */,
+				B00D74DC18B8F3CD00BA3BD9 /* CSJ_NavGestureViewController.h */,
+				B00D74DD18B8F3CD00BA3BD9 /* CSJ_NavGestureViewController.m */,
+				B00D74D918B8F0C500BA3BD9 /* CSJ_CoredataTableViewController.h */,
+				B00D74DA18B8F0C500BA3BD9 /* CSJ_CoredataTableViewController.m */,
 			);
 			path = CSJTools;
 			sourceTree = "<group>";
@@ -296,10 +306,12 @@
 				B026418018A3FB4900012D04 /* AppDelegate.m in Sources */,
 				B070135618A514A300FACF7D /* CSJMD5.m in Sources */,
 				B070135518A514A300FACF7D /* CSJDES.m in Sources */,
+				B00D74DE18B8F3CD00BA3BD9 /* CSJ_NavGestureViewController.m in Sources */,
 				B070135818A514A300FACF7D /* CSJURL.m in Sources */,
 				B070135718A514A300FACF7D /* CSJString.m in Sources */,
 				B026417C18A3FB4900012D04 /* main.m in Sources */,
 				B070135318A514A300FACF7D /* CSJBase64.m in Sources */,
+				B00D74DB18B8F0C500BA3BD9 /* CSJ_CoredataTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

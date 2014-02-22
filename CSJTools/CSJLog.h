@@ -37,13 +37,13 @@
 //iOS 版本
 #define CSJ_IOSDEVICE [[[UIDevice currentDevice]systemVersion]intValue]
 //iPhone5
-#define DEVICE_IS_IPHONE5 (UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPhone && [UIScreen mainScreen].applicationFrame.size.height>=548.00)
+#define CSJ_DEVICE_IS_IPHONE5 (UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPhone && [UIScreen mainScreen].applicationFrame.size.height>=548.00)
 #define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
 
 //iPad
-#define isPad (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define CSJ_isPad (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 //iPhone
-#define isPhone (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define CSJ_isPhone (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
 
 
 
