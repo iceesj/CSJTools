@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CSJ_NavGestureViewController : UINavigationController
+@interface CSJ_NavGestureViewController : UINavigationController<UIGestureRecognizerDelegate>
 
-@property (nonatomic, strong, readonly) UIPanGestureRecognizer *csj_popGestureRecognizer;
 
 @end

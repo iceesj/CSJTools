@@ -98,10 +98,20 @@ pod 'CSJTools'
 -(NSDictionary  *)parameters;
 
 ```
+
+#####CSJ_NavGestureViewController
+A custom gesture to return Navigationcontroller
+
+#####CSJ_CoredataTableViewController
+A automatic NSFetchedResults Coredata Tableviewcontroller
+
+
 ##Special thanks to
 Thank them sparked my inspiration. Thank them for their contributions to the open source community.
 
 * [ZXTools](https://github.com/zhangxigithub/ZXTools) 
+* [RCNavigationController](https://github.com/RoCry/RCNavigationController)
+* [cs193p Coredata](http://www.stanford.edu/class/cs193p/cgi-bin/drupal/node/389)
 
 ## License
 CSJTools is available under the MIT license.

@@ -12,6 +12,9 @@
 #define TOP_VIEW    (KEY_WINDOW.rootViewController.view)
 
 @interface CSJ_NavGestureViewController ()
+{
+    dispatch_once_t onceToken;
+}
 @property (nonatomic, strong) NSMutableArray *snapshotStack;
 @property (nonatomic, strong) UIImageView *snapshotImageView;
 @property (nonatomic, strong) UIView *alphaView;
@@ -60,20 +63,19 @@
     return self;
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    UIPanGestureRecognizer *panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePanGesture:)];
-    [self.view addGestureRecognizer:panGestureRecognizer];
-    _csj_popGestureRecognizer = panGestureRecognizer;
-    
+- (void)setupGestureIfNeed {
+    dispatch_once(&onceToken, ^{
+        UIPanGestureRecognizer *panPopGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePanGesture:)];
+        panPopGesture.delegate = self;
+        [self.view addGestureRecognizer:panPopGesture];
+        _snapshotStack = [NSMutableArray array];
+    });
 }
 
 -(void)viewWillAppear:(BOOL)animated
 {
     [self addShadowForView];
 }
-
 
 - (void)didReceiveMemoryWarning
 {
@@ -97,13 +99,20 @@
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
+    if (self.viewControllers.count > 0) {
+        [self setupGestureIfNeed];
+        
+        //存储照片
+        UIImage *image = [self takeSnapshot];
+        [self.snapshotStack addObject:image];
+    }
+    /*
     if (!self.snapshotStack) {
         self.snapshotStack = [[NSMutableArray alloc] initWithCapacity:0];
     }
-    
     UIImage *snapshot = [self takeSnapshot];
     if (snapshot) [self.snapshotStack addObject:snapshot];
-    
+    */
     [super pushViewController:viewController animated:animated];
 }
 
