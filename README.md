@@ -12,6 +12,9 @@ CSJTools is an Objective-C library for iOS developers.
 * add custom UINavigationController
 * add use coredata FetchedResults tableviewcontroller
 
+#####0.0.7
+* add CSJToolKit
+
 ##Requirements
 * iOS 6.0 or later
 * must support ARC
@@ -105,6 +108,10 @@ A custom gesture to return Navigationcontroller
 #####CSJ_CoredataTableViewController
 A automatic NSFetchedResults Coredata Tableviewcontroller
 
+#####CSJToolKit
+```
++ (CGSize)textSize:(NSString*)text withFont:(UIFont*)font inWidth:(CGFloat)width;
+```
 
 ##Special thanks to
 Thank them sparked my inspiration. Thank them for their contributions to the open source community.
