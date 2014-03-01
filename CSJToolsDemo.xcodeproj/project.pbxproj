@@ -30,6 +30,7 @@
 		B070135618A514A300FACF7D /* CSJMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = B070134E18A514A300FACF7D /* CSJMD5.m */; };
 		B070135718A514A300FACF7D /* CSJString.m in Sources */ = {isa = PBXBuildFile; fileRef = B070135018A514A300FACF7D /* CSJString.m */; };
 		B070135818A514A300FACF7D /* CSJURL.m in Sources */ = {isa = PBXBuildFile; fileRef = B070135218A514A300FACF7D /* CSJURL.m */; };
+		B0DCB94F18C1A20600A237A2 /* CSJToolKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B0DCB94E18C1A20600A237A2 /* CSJToolKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,8 @@
 		B070135018A514A300FACF7D /* CSJString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSJString.m; sourceTree = "<group>"; };
 		B070135118A514A300FACF7D /* CSJURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSJURL.h; sourceTree = "<group>"; };
 		B070135218A514A300FACF7D /* CSJURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSJURL.m; sourceTree = "<group>"; };
+		B0DCB94D18C1A20600A237A2 /* CSJToolKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSJToolKit.h; sourceTree = "<group>"; };
+		B0DCB94E18C1A20600A237A2 /* CSJToolKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSJToolKit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +204,8 @@
 				B070135018A514A300FACF7D /* CSJString.m */,
 				B070135118A514A300FACF7D /* CSJURL.h */,
 				B070135218A514A300FACF7D /* CSJURL.m */,
+				B0DCB94D18C1A20600A237A2 /* CSJToolKit.h */,
+				B0DCB94E18C1A20600A237A2 /* CSJToolKit.m */,
 				B00D74DC18B8F3CD00BA3BD9 /* CSJ_NavGestureViewController.h */,
 				B00D74DD18B8F3CD00BA3BD9 /* CSJ_NavGestureViewController.m */,
 				B00D74D918B8F0C500BA3BD9 /* CSJ_CoredataTableViewController.h */,
@@ -309,6 +314,7 @@
 				B00D74E118B9072A00BA3BD9 /* SecondViewController.m in Sources */,
 				B026418618A3FB4900012D04 /* ViewController.m in Sources */,
 				B070135418A514A300FACF7D /* CSJDate.m in Sources */,
+				B0DCB94F18C1A20600A237A2 /* CSJToolKit.m in Sources */,
 				B026418018A3FB4900012D04 /* AppDelegate.m in Sources */,
 				B070135618A514A300FACF7D /* CSJMD5.m in Sources */,
 				B070135518A514A300FACF7D /* CSJDES.m in Sources */,

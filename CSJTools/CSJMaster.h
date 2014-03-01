@@ -27,9 +27,11 @@
 //NSURL
 #import "CSJURL.h"
 
+//some tools
+#import "CSJToolKit.h"
+
 //
 //#define CSJ_UIVC
-
 #ifdef CSJ_UIVC
     #import "CSJ_CoredataTableViewController.h"
 #else
