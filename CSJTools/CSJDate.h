@@ -24,12 +24,12 @@
 
 
 @interface NSDate (CSJDate)
--(int)year;
--(int)month;
--(int)day;
--(int)hour;
--(int)minute;
--(int)second;
+-(NSInteger)year;
+-(NSInteger)month;
+-(NSInteger)day;
+-(NSInteger)hour;
+-(NSInteger)minute;
+-(NSInteger)second;
 
 -(NSString *)stringWithFormatter:(NSString *)formatter;
 

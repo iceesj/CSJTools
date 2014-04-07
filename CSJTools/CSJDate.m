@@ -99,7 +99,7 @@
 
 @implementation NSDate (CSJDate)
 
--(int)year {
+-(NSInteger)year {
     NSCalendar *gregorian = [[NSCalendar alloc]
                              initWithCalendarIdentifier:NSGregorianCalendar];
     [gregorian setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"UTC"]];
@@ -109,7 +109,7 @@
 }
 
 
--(int)month {
+-(NSInteger)month {
     NSCalendar *gregorian = [[NSCalendar alloc]
                              initWithCalendarIdentifier:NSGregorianCalendar];
     [gregorian setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"UTC"]];
@@ -118,7 +118,7 @@
     return [components month];
 }
 
--(int)day {
+-(NSInteger)day {
     NSCalendar *gregorian = [[NSCalendar alloc]
                              initWithCalendarIdentifier:NSGregorianCalendar];
     [gregorian setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"UTC"]];
@@ -127,7 +127,7 @@
     
     return [components day];
 }
--(int)hour
+-(NSInteger)hour
 {
     NSCalendar *gregorian = [[NSCalendar alloc]
                              initWithCalendarIdentifier:NSGregorianCalendar];
@@ -137,7 +137,7 @@
     
     return [components hour];
 }
--(int)minute
+-(NSInteger)minute
 {
     NSCalendar *gregorian = [[NSCalendar alloc]
                              initWithCalendarIdentifier:NSGregorianCalendar];
@@ -147,7 +147,7 @@
     
     return [components minute];
 }
--(int)second
+-(NSInteger)second
 {
     NSCalendar *gregorian = [[NSCalendar alloc]
                              initWithCalendarIdentifier:NSGregorianCalendar];

@@ -13,7 +13,13 @@
 #ifndef CSJTools_CSJMaster_h
 #endif
 
+//log
 #import "CSJLog.h"
+
+/**
+ Tools
+ */
+#import "CSJToolKit.h"
 
 //NSString
 #import "CSJBase64.h"
@@ -26,9 +32,6 @@
 
 //NSURL
 #import "CSJURL.h"
-
-//some tools
-#import "CSJToolKit.h"
 
 //
 //#define CSJ_UIVC
