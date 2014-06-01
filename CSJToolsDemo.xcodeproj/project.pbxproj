@@ -58,6 +58,9 @@
 		B0F05519193B3B0700835E42 /* MagicalRecord+ShorthandSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F054FC193B3B0700835E42 /* MagicalRecord+ShorthandSupport.m */; };
 		B0F0551A193B3B0700835E42 /* MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F054FE193B3B0700835E42 /* MagicalRecord.m */; };
 		B0F0551C193B3B1F00835E42 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F0551B193B3B1F00835E42 /* CoreData.framework */; };
+		B0F05520193B3EC100835E42 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B0F0551E193B3EC100835E42 /* Model.xcdatamodeld */; };
+		B0F05526193B3FD100835E42 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F05525193B3FD100835E42 /* FirstViewController.m */; };
+		B0F05529193B5C6C00835E42 /* Firstdata.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F05528193B5C6C00835E42 /* Firstdata.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -167,6 +170,11 @@
 		B0F054FF193B3B0700835E42 /* MagicalRecordShorthand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalRecordShorthand.h; sourceTree = "<group>"; };
 		B0F05500193B3B0700835E42 /* CoreData+MagicalRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreData+MagicalRecord.h"; sourceTree = "<group>"; };
 		B0F0551B193B3B1F00835E42 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B0F0551F193B3EC100835E42 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		B0F05524193B3FD100835E42 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		B0F05525193B3FD100835E42 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		B0F05527193B5C6C00835E42 /* Firstdata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Firstdata.h; sourceTree = "<group>"; };
+		B0F05528193B5C6C00835E42 /* Firstdata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Firstdata.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +205,7 @@
 		B026416318A3FB4900012D04 = {
 			isa = PBXGroup;
 			children = (
+				B0F0551D193B3EB100835E42 /* CoreData */,
 				B0F054C5193B3B0700835E42 /* MagicalRecord */,
 				B02641A418A3FB6100012D04 /* CSJTools */,
 				B026417518A3FB4900012D04 /* CSJToolsDemo */,
@@ -233,10 +242,12 @@
 				B026417E18A3FB4900012D04 /* AppDelegate.h */,
 				B026417F18A3FB4900012D04 /* AppDelegate.m */,
 				B026418118A3FB4900012D04 /* Main.storyboard */,
-				B026418418A3FB4900012D04 /* ViewController.h */,
-				B026418518A3FB4900012D04 /* ViewController.m */,
+				B0F05524193B3FD100835E42 /* FirstViewController.h */,
+				B0F05525193B3FD100835E42 /* FirstViewController.m */,
 				B00D74DF18B9072A00BA3BD9 /* SecondViewController.h */,
 				B00D74E018B9072A00BA3BD9 /* SecondViewController.m */,
+				B026418418A3FB4900012D04 /* ViewController.h */,
+				B026418518A3FB4900012D04 /* ViewController.m */,
 				B026418718A3FB4900012D04 /* Images.xcassets */,
 				B026417618A3FB4900012D04 /* Supporting Files */,
 			);
@@ -400,6 +411,16 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
+		B0F0551D193B3EB100835E42 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				B0F05527193B5C6C00835E42 /* Firstdata.h */,
+				B0F05528193B5C6C00835E42 /* Firstdata.m */,
+				B0F0551E193B3EC100835E42 /* Model.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -524,14 +545,17 @@
 				B0F05509193B3B0700835E42 /* NSManagedObject+MagicalDataImport.m in Sources */,
 				B0F05515193B3B0700835E42 /* MagicalRecord+ErrorHandling.m in Sources */,
 				B0F0550B193B3B0700835E42 /* NSManagedObject+MagicalRecord.m in Sources */,
+				B0F05520193B3EC100835E42 /* Model.xcdatamodeld in Sources */,
 				B0F0550F193B3B0700835E42 /* NSManagedObjectContext+MagicalSaves.m in Sources */,
 				B0F05504193B3B0700835E42 /* NSNumber+MagicalDataImport.m in Sources */,
 				B0F0550D193B3B0700835E42 /* NSManagedObjectContext+MagicalObserving.m in Sources */,
 				B0F05516193B3B0700835E42 /* MagicalRecord+iCloud.m in Sources */,
+				B0F05529193B5C6C00835E42 /* Firstdata.m in Sources */,
 				B026417C18A3FB4900012D04 /* main.m in Sources */,
 				B0F05508193B3B0700835E42 /* NSManagedObject+MagicalAggregation.m in Sources */,
 				B0F05501193B3B0700835E42 /* MagicalImportFunctions.m in Sources */,
 				B0F05502193B3B0700835E42 /* NSAttributeDescription+MagicalDataImport.m in Sources */,
+				B0F05526193B3FD100835E42 /* FirstViewController.m in Sources */,
 				B0F05506193B3B0700835E42 /* NSRelationshipDescription+MagicalDataImport.m in Sources */,
 				B0F0550E193B3B0700835E42 /* NSManagedObjectContext+MagicalRecord.m in Sources */,
 				B070135318A514A300FACF7D /* CSJBase64.m in Sources */,
@@ -760,6 +784,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B0F0551E193B3EC100835E42 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B0F0551F193B3EC100835E42 /* Model.xcdatamodel */,
+			);
+			currentVersion = B0F0551F193B3EC100835E42 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B026416418A3FB4900012D04 /* Project object */;
 }
