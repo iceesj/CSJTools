@@ -22,6 +22,7 @@
 #import "CSJToolKit.h"
 
 //NSString
+#import "NSString+CSJSSLTool.h"
 #import "CSJBase64.h"
 #import "CSJMD5.h"
 #import "CSJDES.h"
