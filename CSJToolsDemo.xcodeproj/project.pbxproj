@@ -59,7 +59,7 @@
 		B070135618A514A300FACF7D /* CSJMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = B070134E18A514A300FACF7D /* CSJMD5.m */; };
 		B070135718A514A300FACF7D /* CSJString.m in Sources */ = {isa = PBXBuildFile; fileRef = B070135018A514A300FACF7D /* CSJString.m */; };
 		B070135818A514A300FACF7D /* CSJURL.m in Sources */ = {isa = PBXBuildFile; fileRef = B070135218A514A300FACF7D /* CSJURL.m */; };
-		B0A6AF741D2E3146005479D3 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A6AF731D2E3146005479D3 /* Reachability.m */; };
+		B0A6AF781D2E382C005479D3 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A6AF771D2E382C005479D3 /* Reachability.m */; };
 		B0DCB94F18C1A20600A237A2 /* CSJToolKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B0DCB94E18C1A20600A237A2 /* CSJToolKit.m */; };
 		B0F0551C193B3B1F00835E42 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F0551B193B3B1F00835E42 /* CoreData.framework */; };
 		B0F05526193B3FD100835E42 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F05525193B3FD100835E42 /* FirstViewController.m */; };
@@ -174,8 +174,8 @@
 		B070135018A514A300FACF7D /* CSJString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSJString.m; sourceTree = "<group>"; };
 		B070135118A514A300FACF7D /* CSJURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSJURL.h; sourceTree = "<group>"; };
 		B070135218A514A300FACF7D /* CSJURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSJURL.m; sourceTree = "<group>"; };
-		B0A6AF721D2E3146005479D3 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		B0A6AF731D2E3146005479D3 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		B0A6AF761D2E382C005479D3 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		B0A6AF771D2E382C005479D3 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		B0DCB94D18C1A20600A237A2 /* CSJToolKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSJToolKit.h; sourceTree = "<group>"; };
 		B0DCB94E18C1A20600A237A2 /* CSJToolKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSJToolKit.m; sourceTree = "<group>"; };
 		B0F0551B193B3B1F00835E42 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -404,6 +404,7 @@
 		B02641A418A3FB6100012D04 /* CSJTools */ = {
 			isa = PBXGroup;
 			children = (
+				B0A6AF751D2E382C005479D3 /* Reachability */,
 				B070134C18A514A300FACF7D /* CSJMaster.h */,
 				B070134B18A514A300FACF7D /* CSJLog.h */,
 				7B5161B01D2E057100EF29B4 /* NSString+CSJSSLTool.h */,
@@ -433,16 +434,15 @@
 		B0A6AF701D2E3120005479D3 /* ObjCCommon */ = {
 			isa = PBXGroup;
 			children = (
-				B0A6AF711D2E3146005479D3 /* Reachability */,
 			);
 			path = ObjCCommon;
 			sourceTree = "<group>";
 		};
-		B0A6AF711D2E3146005479D3 /* Reachability */ = {
+		B0A6AF751D2E382C005479D3 /* Reachability */ = {
 			isa = PBXGroup;
 			children = (
-				B0A6AF721D2E3146005479D3 /* Reachability.h */,
-				B0A6AF731D2E3146005479D3 /* Reachability.m */,
+				B0A6AF761D2E382C005479D3 /* Reachability.h */,
+				B0A6AF771D2E382C005479D3 /* Reachability.m */,
 			);
 			path = Reachability;
 			sourceTree = "<group>";
@@ -558,7 +558,6 @@
 				7B5161A21D2E048300EF29B4 /* NSManagedObjectContext+MagicalObserving.m in Sources */,
 				7B5161AE1D2E048300EF29B4 /* MagicalRecord+ShorthandSupport.m in Sources */,
 				7B5161A51D2E048300EF29B4 /* NSManagedObjectContext+MagicalThreading.m in Sources */,
-				B0A6AF741D2E3146005479D3 /* Reachability.m in Sources */,
 				7B51619E1D2E048300EF29B4 /* NSManagedObject+MagicalDataImport.m in Sources */,
 				7B5161A91D2E048300EF29B4 /* MagicalRecord+Actions.m in Sources */,
 				7B5161591D2E047D00EF29B4 /* Model.xcdatamodeld in Sources */,
@@ -578,6 +577,7 @@
 				7B51619F1D2E048300EF29B4 /* NSManagedObject+MagicalFinders.m in Sources */,
 				7B5161981D2E048300EF29B4 /* NSEntityDescription+MagicalDataImport.m in Sources */,
 				7B5161A01D2E048300EF29B4 /* NSManagedObject+MagicalRecord.m in Sources */,
+				B0A6AF781D2E382C005479D3 /* Reachability.m in Sources */,
 				B0F05526193B3FD100835E42 /* FirstViewController.m in Sources */,
 				7B5161A71D2E048300EF29B4 /* NSPersistentStore+MagicalRecord.m in Sources */,
 				7B5161961D2E048300EF29B4 /* MagicalImportFunctions.m in Sources */,
