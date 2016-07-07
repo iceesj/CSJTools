@@ -1,28 +1,28 @@
 //
 //  CSJToolKit.h
-//  CSJToolsDemo
+//  ZhichengApp
 //
-//  Created by 曹 盛杰 on 14-3-1.
-//  Copyright (c) 2014年 曹 盛杰. All rights reserved.
+//  Created by iceesj on 14-2-18.
+//  Copyright (c) 2014年 iceesj. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
-#import "sys/xattr.h"
 
 @interface CSJToolKit : NSObject
-+ (CSJToolKit *)sharedManager;
-+ (CGSize)textSize:(NSString*)text withFont:(UIFont*)font inWidth:(CGFloat)width;
++ (CSJToolKit *)sharedDirector;
 
-///*******
++ (BOOL)isExistenceNetwork;
+//+ (CGSize)textSize:(NSString*)text withFont:(UIFont*)font inWidth:(CGFloat)width inHeight:(CGFloat)height;
 + (NSInteger)countWord:(NSString *)s;
+//+ (UIViewController *)viewController;
 
-+ (NSURL*)fileUrlForDirectory: (NSString *)name;
-+ (NSURL*)fileUrlForName: (NSString *)name;
-+ (NSURL*)fileUrlForTempName: (NSString *)name;
-+ (NSURL*)fileUrlForJPGName: (NSString *)name;
-+ (NSURL*)fileUrlForJsonType: (NSString *)type;
-+ (void)AddSkipBackupAttributeToFile:(NSURL*)url;
-+ (NSMutableDictionary*)dictionaryFromManagedObject:(NSManagedObject*)managedObject;
++ (NSInteger)MinBetweenDate:(NSDate *)fromDateTime andDate:(NSDate *)toDateTime;
++ (NSInteger)daysBetweenDate:(NSDate*)fromDateTime andDate:(NSDate*)toDateTime;
+
++ (NSMutableDictionary*) dictionaryFromManagedObject:(NSManagedObject*)managedObject;
+
++(NSInteger)qdyxRandomNumber;
++(NSInteger)qdyxRandomTime;
 
 @end

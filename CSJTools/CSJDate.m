@@ -33,10 +33,10 @@
     NSDate *toDate;
     //当前日历
     NSCalendar *calendar = [NSCalendar currentCalendar];
-    [calendar rangeOfUnit:NSDayCalendarUnit startDate:&fromDate interval:nil forDate:fromDateTime];
-    [calendar rangeOfUnit:NSDayCalendarUnit startDate:&toDate interval:nil forDate:toDateTime];
+    [calendar rangeOfUnit:NSCalendarUnitDay startDate:&fromDate interval:nil forDate:fromDateTime];
+    [calendar rangeOfUnit:NSCalendarUnitDay startDate:&toDate interval:nil forDate:toDateTime];
     
-    NSDateComponents *difference = [calendar components:NSDayCalendarUnit fromDate:fromDate toDate:toDate options:0];
+    NSDateComponents *difference = [calendar components:NSCalendarUnitDay fromDate:fromDate toDate:toDate options:0];
     
     return [difference day];
 }
@@ -53,9 +53,9 @@
     NSDate *fromDate;
     NSDate *toDate;
     NSCalendar *calendar = [NSCalendar currentCalendar];
-    [calendar rangeOfUnit:NSHourCalendarUnit startDate:&fromDate interval:nil forDate:fromDateTime];
-    [calendar rangeOfUnit:NSHourCalendarUnit startDate:&toDate interval:nil forDate:toDateTime];
-    NSDateComponents *difference = [calendar components:NSHourCalendarUnit fromDate:fromDate toDate:toDate options:0];
+    [calendar rangeOfUnit:NSCalendarUnitHour startDate:&fromDate interval:nil forDate:fromDateTime];
+    [calendar rangeOfUnit:NSCalendarUnitHour startDate:&toDate interval:nil forDate:toDateTime];
+    NSDateComponents *difference = [calendar components:NSCalendarUnitHour fromDate:fromDate toDate:toDate options:0];
     return [difference hour];
 }
 
@@ -71,9 +71,9 @@
     NSDate *fromDate;
     NSDate *toDate;
     NSCalendar *calendar = [NSCalendar currentCalendar];
-    [calendar rangeOfUnit:NSMinuteCalendarUnit startDate:&fromDate interval:nil forDate:fromDateTime];
-    [calendar rangeOfUnit:NSMinuteCalendarUnit startDate:&toDate interval:nil forDate:toDateTime];
-    NSDateComponents *difference = [calendar components:NSMinuteCalendarUnit fromDate:fromDate toDate:toDate options:0];
+    [calendar rangeOfUnit:NSCalendarUnitMinute startDate:&fromDate interval:nil forDate:fromDateTime];
+    [calendar rangeOfUnit:NSCalendarUnitMinute startDate:&toDate interval:nil forDate:toDateTime];
+    NSDateComponents *difference = [calendar components:NSCalendarUnitMinute fromDate:fromDate toDate:toDate options:0];
     return [difference minute];
 }
 
@@ -89,9 +89,9 @@
     NSDate *fromDate;
     NSDate *toDate;
     NSCalendar *calendar = [NSCalendar currentCalendar];
-    [calendar rangeOfUnit:NSSecondCalendarUnit startDate:&fromDate interval:nil forDate:fromDateTime];
-    [calendar rangeOfUnit:NSSecondCalendarUnit startDate:&toDate interval:nil forDate:toDateTime];
-    NSDateComponents *difference = [calendar components:NSSecondCalendarUnit fromDate:fromDate toDate:toDate options:0];
+    [calendar rangeOfUnit:NSCalendarUnitSecond startDate:&fromDate interval:nil forDate:fromDateTime];
+    [calendar rangeOfUnit:NSCalendarUnitSecond startDate:&toDate interval:nil forDate:toDateTime];
+    NSDateComponents *difference = [calendar components:NSCalendarUnitSecond fromDate:fromDate toDate:toDate options:0];
     return [difference second];
 }
 @end
@@ -101,61 +101,61 @@
 
 -(NSInteger)year {
     NSCalendar *gregorian = [[NSCalendar alloc]
-                             initWithCalendarIdentifier:NSGregorianCalendar];
+                             initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     [gregorian setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"UTC"]];
-    NSDateComponents *components = [gregorian components:NSYearCalendarUnit fromDate:self];
+    NSDateComponents *components = [gregorian components:NSCalendarUnitYear fromDate:self];
     [components setTimeZone:[NSTimeZone defaultTimeZone]];
-    return [components year];
+    return (unsigned int)[components year];
 }
 
 
 -(NSInteger)month {
     NSCalendar *gregorian = [[NSCalendar alloc]
-                             initWithCalendarIdentifier:NSGregorianCalendar];
+                             initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     [gregorian setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"UTC"]];
-    NSDateComponents *components = [gregorian components:NSMonthCalendarUnit fromDate:self];
+    NSDateComponents *components = [gregorian components:NSCalendarUnitMonth fromDate:self];
     [components setTimeZone:[NSTimeZone defaultTimeZone]];
-    return [components month];
+    return (unsigned int)[components month];
 }
 
 -(NSInteger)day {
     NSCalendar *gregorian = [[NSCalendar alloc]
-                             initWithCalendarIdentifier:NSGregorianCalendar];
+                             initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     [gregorian setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"UTC"]];
     
-    NSDateComponents *components = [gregorian components:NSDayCalendarUnit fromDate:self];
+    NSDateComponents *components = [gregorian components:NSCalendarUnitDay fromDate:self];
     
-    return [components day];
+    return (unsigned int)[components day];
 }
 -(NSInteger)hour
 {
     NSCalendar *gregorian = [[NSCalendar alloc]
-                             initWithCalendarIdentifier:NSGregorianCalendar];
+                             initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     [gregorian setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"UTC"]];
     
-    NSDateComponents *components = [gregorian components:NSHourCalendarUnit fromDate:self];
+    NSDateComponents *components = [gregorian components:NSCalendarUnitHour fromDate:self];
     
-    return [components hour];
+    return (unsigned int)[components hour];
 }
 -(NSInteger)minute
 {
     NSCalendar *gregorian = [[NSCalendar alloc]
-                             initWithCalendarIdentifier:NSGregorianCalendar];
+                             initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     [gregorian setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"UTC"]];
     
-    NSDateComponents *components = [gregorian components:NSMinuteCalendarUnit fromDate:self];
+    NSDateComponents *components = [gregorian components:NSCalendarUnitMinute fromDate:self];
     
-    return [components minute];
+    return (unsigned int)[components minute];
 }
 -(NSInteger)second
 {
     NSCalendar *gregorian = [[NSCalendar alloc]
-                             initWithCalendarIdentifier:NSGregorianCalendar];
+                             initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     [gregorian setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"UTC"]];
     
-    NSDateComponents *components = [gregorian components:NSSecondCalendarUnit fromDate:self];
+    NSDateComponents *components = [gregorian components:NSCalendarUnitSecond fromDate:self];
     
-    return [components second];
+    return (unsigned int)[components second];
 }
 
 
@@ -182,7 +182,7 @@
                       day:(int)day
 {
     NSCalendar *gregorian = [[NSCalendar alloc]
-                             initWithCalendarIdentifier:NSGregorianCalendar];
+                             initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     [gregorian setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"UTC"]];
     
     
@@ -203,7 +203,7 @@
                    second:(int)second
 {
     NSCalendar *gregorian = [[NSCalendar alloc]
-                             initWithCalendarIdentifier:NSGregorianCalendar];
+                             initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     [gregorian setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"UTC"]];
     
     

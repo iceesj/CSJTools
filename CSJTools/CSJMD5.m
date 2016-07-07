@@ -24,7 +24,7 @@
     while(!done)
     {
         NSData* fileData = [handle readDataOfLength: 1024*100];
-        CC_MD5_Update(&md5, [fileData bytes], [fileData length]);
+        CC_MD5_Update(&md5, [fileData bytes], (unsigned int)[fileData length]);
         if( [fileData length] == 0 ) done = YES;
     }
     unsigned char digest[CC_MD5_DIGEST_LENGTH];

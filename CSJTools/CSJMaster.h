@@ -13,16 +13,9 @@
 #ifndef CSJTools_CSJMaster_h
 #endif
 
-//log
 #import "CSJLog.h"
 
-/**
- Tools
- */
-#import "CSJToolKit.h"
-
 //NSString
-#import "NSString+CSJSSLTool.h"
 #import "CSJBase64.h"
 #import "CSJMD5.h"
 #import "CSJDES.h"
@@ -33,6 +26,9 @@
 
 //NSURL
 #import "CSJURL.h"
+
+//some tools
+#import "CSJToolKit.h"
 
 //
 //#define CSJ_UIVC
