@@ -4,6 +4,8 @@
 
 CSJTools is an Objective-C library for iOS developers.
 
+Now please go to this URL: https://github.com/iceesj/CSJTools2
+
 ##Version
 ####0.0.5
 * first version
