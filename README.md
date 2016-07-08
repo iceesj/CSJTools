@@ -24,8 +24,8 @@ Now please go to this URL: https://github.com/iceesj/CSJTools2
 ##Installation with CocoaPods
 #####Podfile
 ```
-platform :ios, '6.0'
-pod 'CSJTools'
+platform :ios, '8.0'
+pod 'CSJTools2'
 ```
 
 ##List
